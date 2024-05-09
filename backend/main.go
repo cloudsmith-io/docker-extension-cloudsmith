@@ -71,6 +71,7 @@ func packages(ctx echo.Context) error {
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header = http.Header{
 		"X-Api-Key": {creds.APIKey},
+		"User-Agent": {"Cloudsmith-Docker-Extension"},
 	}
 	res, _ := client.Do(req)
 

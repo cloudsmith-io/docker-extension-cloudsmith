@@ -201,7 +201,7 @@ export function App() {
             }
             if (!pullByVersion && img.tags.hasOwnProperty("version") && !uniqueImageTags.includes(img.name + ":" + img.tags['version'])) {
               uniqueImageTags.push(img.name + ":" + img.tags["version"]);
-              ptag["tag"] = img.tags['version'];
+              ptag["tag"] = img.tags['version'][0];
             } else {
               ptag['tag'] = 'sha256:' + img.version;
             }

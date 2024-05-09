@@ -25,7 +25,6 @@ RUN npm run build
 FROM alpine
 LABEL org.opencontainers.image.title="Cloudsmith" \
     org.opencontainers.image.description="Manage images in your Cloudsmith repositories." \
-    com.docker.extension.detailed-description="${detailed_description}" \
     org.opencontainers.image.vendor="Cloudsmith" \
     com.docker.extension.account-info="true" \
     com.docker.desktop.extension.api.version=">= 0.3.4" \
